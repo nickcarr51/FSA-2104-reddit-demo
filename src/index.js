@@ -28,7 +28,6 @@ const render = async () => {
   app.appendChild(navBar(state.navLinks));
   await fetchData(window.location.hash.slice(1));
   app.appendChild(content(state.posts));
-  await axios.post('/someendpoint', { foo: 'Bar', bazz: 'foo' });
 }
 
 render();

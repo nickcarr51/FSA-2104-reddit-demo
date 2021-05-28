@@ -14,7 +14,6 @@ app.use(express.json());
 
 
 app.get('/api/reddit', async (req, res) => {
-  console.log(req.query);
   let data;
   if (req.query.subreddit) {
     data = (await axios.get(`${URL}r/${req.query.subreddit}/.json`)).data.data.children;
