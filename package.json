@@ -1,0 +1,32 @@
+{
+  "name": "FSA-2104-reddit-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "npm run build -- --mode=development --watch",
+    "start:dev": "npm run build:dev & nodemon server --ignore src/ --ignore dist/",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickcarr51/FSA-2104-reddit-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickcarr51/FSA-2104-reddit-demo/issues"
+  },
+  "homepage": "https://github.com/nickcarr51/FSA-2104-reddit-demo#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
